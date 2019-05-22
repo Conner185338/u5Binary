@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:u5Binary"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBox x:Name="txtInput" Text="Enter Integer Here!"/>
+        <Button x:Name="btnCovert" Click="btnCovert_Click" Content="Convert To Binary"/>
+        <Label x:Name="lblOutput"/>
+    </StackPanel>
 </Window>

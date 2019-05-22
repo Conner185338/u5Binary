@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Conner Warboys 
+ * May 22nd
+ * Binary Conversion Code
+ * ICS3U
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +29,15 @@ namespace u5Binary
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnCovert_Click(object sender, RoutedEventArgs e)
+        {
+            string input = txtInput.Text;
+            int inputValue = 0;
+            int.TryParse(input, out inputValue); //converting string to int
+            string binary = Convert.ToString(inputValue, 2); //converts the input to binary
+            lblOutput.Content = binary;
         }
     }
 }
